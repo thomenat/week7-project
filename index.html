@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <title>My weather application</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="weather">
+        <header>
+          <form>
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              required
+              class="city-field"
+            />
+            <input type="submit" value="Search" class="search-button" />
+          </form>
+        </header>
+        <main>
+          <div class="current-weather">
+            <div>
+              <h1 class="city-name">Paris</h1>
+              <p class="weather-info">
+               <span class="current-date-time"> Saturday 15:32 </span>
+              </p>
+            </div>
+
+            <div class="display-temp">
+              <span class="temp-emoji">☀️</span>
+              <span class="current-temp">14</span>
+              <span class="unit">°C</span>
+            </div>
+          </div>
+          <div class="precipitation"> moderate rain </div>
+          <div class="humidity">Humidity: <strong>87%</strong></div>
+          <div class="wind">Wind: <strong>7.2km/h</strong></div>
+        </main>
+        <footer>
+          <p>
+            This project was coded by
+            <a href="https://www.linkedin.com/in/natalia-thome/" target="_blank"
+              >Natália Thomé</a
+            >
+            and is <a href="#" target="_blank"> on GitHub</a> and
+            <a href="#" target="_blank">hosted on Netlify</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
