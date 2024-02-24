@@ -37,7 +37,7 @@ function currentDate() {
     let minute = now.getMinutes().toString().padStart(2, "0");
   
     let dateNow = document.querySelector(".current-date-time");
-    dateNow.innerHTML = `${day} ${hour}:${minute}`;
+    dateNow.innerHTML = `${day}, ${hour}:${minute}`;
   }
   
   currentDate();
